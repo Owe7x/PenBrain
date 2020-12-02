@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../css/font/ProximaNova-Regular.eot") format("embedded-opentype");
+  src: url("../css/font/ProximaNova-Regular.woff") format("woff");
+  src: url("../css/font/ProximaNova-Regular.ttf") format("truetype");
+  color: #341812;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../css/font/ProximaNova-Bold.eot") format("embedded-opentype");
+  src: url("../css/font/ProximaNova-Bold.woff") format("woff");
+  src: url("../css/font/ProximaNova-Bold.ttf") format("truetype");
+  color: #341812;
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px 0px;
+}
+header .header-top .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header-top .menu nav li {
+  margin-right: 13px;
+}
+header .header-top .menu nav li a {
+  font-family: "ProximaNovaBold";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #341812;
+}
+header .header-top .menu nav li:first-child {
+  list-style: none;
+}
+header .header-top .menu nav li:last-child {
+  margin-right: 0px;
+}
+header .header-top .menu nav ::marker {
+  font-size: 0.7em;
+}
+header .header-top .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-top .contact .address {
+  font-family: "ProximaNovaBold";
+  font-size: 0.9em;
+  margin-right: 30px;
+}
+header .header-top .contact .address__time {
+  font-family: "ProximaNovaRegular";
+  font-size: 0.9em;
+}
+header .header-top .contact .number {
+  font-family: "ProximaNovaBold";
+  font-size: 0.9em;
+}
+header .header-top .contact .number__call {
+  font-family: "ProximaNovaRegular";
+}
+header .header-top .burger {
+  display: none;
+}
+header .header-main {
+  margin: 50px 0px 0px;
+  padding-bottom: 30px;
+}
+header .header-main__info {
+  text-align: center;
+}
+header .header-main__info .logo {
+  margin-bottom: 36px;
+}
+header .header-main__info .info-h1 {
+  font-family: "ProximaNovaBold";
+  text-transform: uppercase;
+  color: #341812;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+header .header-main__info .info-h2 {
+  font-family: "ProximaNovaRegular";
+  color: #341812;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+header .header-main__services .block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .header-main__services .block__img {
+  padding-top: 12px;
+  margin-bottom: 10px;
+}
+header .header-main__services .block__img:last-child {
+  padding-top: 0px;
+}
+header .header-main__services .block__name {
+  font-family: "ProximaNovaBold";
+  text-transform: uppercase;
+  color: #341812;
+  font-size: 16px;
+}
+header .header-main__services .block-last {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header .header-main__services .block-last__img {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+header .header-main__services .block-last__name {
+  font-family: "ProximaNovaBold";
+  text-transform: uppercase;
+  color: #341812;
+  font-size: 16px;
+}
+header .header-main__button {
+  text-align: center;
+}
+header .header-main__button button {
+  padding: 20px 49px;
+  background: #0deced;
+  border: 8px solid #fbeaec;
+  border-radius: 50px;
+  font-family: "ProximaNovaRegular";
+  font-size: 16px;
+}
+header .header-main__button button:focus {
+  outline: none;
+}
+header .header-main__button button:active {
+  outline: none;
+}
+
+.modals {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  height: 100vh;
+  z-index: 1;
+  width: 320px;
+  background: #f7d4d6;
+  padding: 38px 38px 140px;
+}
+.modals .modal__close {
+  border: none;
+  background: none;
+  float: right;
+}
+.modals nav {
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.modals nav li {
+  margin-bottom: 10px;
+}
+.modals nav li a {
+  font-family: "ProximaNovaBold";
+  text-transform: uppercase;
+  font-size: 1em;
+  text-decoration: none;
+  color: #341812;
+}
+.modals nav ::marker {
+  font-size: 0.7em;
+}
+.modals .contact .address {
+  font-family: "ProximaNovaBold";
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+.modals .contact .address__time {
+  font-family: "ProximaNovaRegular";
+  font-size: 0.9em;
+}
+.modals .contact .number {
+  font-family: "ProximaNovaBold";
+  font-size: 0.9em;
+}
+.modals .contact .number__call {
+  font-family: "ProximaNovaRegular";
+}
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  header .header-top .menu nav li {
+    font-size: 13px;
+  }
+  header .header-top .contact .address {
+    font-size: 13px;
+  }
+  header .header-top .contact .address_time {
+    font-size: 13px;
+  }
+  header .header-top .contact .number {
+    font-size: 13px;
+  }
+  header .header-main__info .info-h1 {
+    font-size: 36px;
+  }
+  header .header-main__info .info-h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .header-top .menu {
+    display: none;
+  }
+  header .header-top .contact {
+    display: none;
+  }
+  header .header-top .burger {
+    display: block;
+  }
+  header .header-main__info .info-h1 {
+    font-size: 28px;
+  }
+  header .header-main__info .info-h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-main__info .info-h1 {
+    font-size: 22px;
+  }
+  header .header-main__info .info-h2 {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

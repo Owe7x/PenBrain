@@ -1,0 +1,210 @@
+@font-face
+    font-family: 'ProximaNovaRegular'
+    src: url("../css/font/ProximaNova-Regular.eot") format("embedded-opentype")
+    src: url("../css/font/ProximaNova-Regular.woff") format("woff")
+    src: url("../css/font/ProximaNova-Regular.ttf") format("truetype")
+    color: #341812
+    font-weight: normal
+    font-style: normal
+@font-face
+    font-family: 'ProximaNovaBold'
+    src: url("../css/font/ProximaNova-Bold.eot") format("embedded-opentype")
+    src: url("../css/font/ProximaNova-Bold.woff") format("woff")
+    src: url("../css/font/ProximaNova-Bold.ttf") format("truetype")
+    color: #341812
+    font-weight: bold
+    font-style: normal
+
+    
+*
+    box-sizing: border-box
+
+header
+    background-image: url(../img/bg.jpg)
+    background-size: cover
+    background-position: center center
+    .header-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 10px 0px 0px
+        .logo
+        .menu
+            nav
+                display: flex
+                li
+                    margin-right: 13px
+                    a
+                        font-family: 'ProximaNovaBold'
+                        text-transform: uppercase
+                        font-size: 0.8em
+                        text-decoration: none
+                        color: #341812
+                    &:first-child
+                        list-style: none
+                    &:last-child
+                        margin-right: 0px
+                ::marker
+                    font-size: 0.7em
+        .contact
+            display: flex
+            justify-content: space-between
+            align-items: center
+            
+            .address
+                font-family: 'ProximaNovaBold'
+                font-size: 0.9em
+                margin-right: 30px
+                &__time
+                    font-family: 'ProximaNovaRegular'
+                    font-size: 0.9em
+            .number
+                font-family: 'ProximaNovaBold'
+                font-size: 0.9em
+                &__call
+                    font-family: 'ProximaNovaRegular'
+        .burger
+            display: none
+    .header-main
+        margin: 50px 0px 0px
+        padding-bottom: 30px
+        &__info
+            text-align: center
+            .logo
+                margin-bottom: 36px
+            .info-h1
+                font-family: 'ProximaNovaBold'
+                text-transform: uppercase
+                color: #341812
+                font-size: 48px
+                letter-spacing: 2px
+            .info-h2
+                font-family: 'ProximaNovaRegular'
+                color: #341812
+                font-size: 36px
+                margin-bottom: 30px
+        &__services
+            .block
+                text-align: center
+                margin-bottom: 20px
+                &__img
+                    padding-top: 12px
+                    margin-bottom: 10px
+                    &:last-child
+                        padding-top: 0px
+                &__name
+                    font-family: 'ProximaNovaBold'
+                    text-transform: uppercase
+                    color: #341812
+                    font-size: 16px
+
+            .block-last
+                text-align: center
+                margin-bottom: 20px
+                &__img
+                    margin-bottom: 10px
+                    cursor: pointer
+                &__name
+                    font-family: 'ProximaNovaBold'
+                    text-transform: uppercase
+                    color: #341812
+                    font-size: 16px
+        &__button
+            text-align: center
+            button
+                padding: 20px 49px
+                background: #0deced
+                border: 8px solid #fbeaec
+                border-radius: 50px
+                font-family: 'ProximaNovaRegular'
+                font-size: 16px
+                &:focus
+                    outline: none
+                &:active
+                    outline: none
+.modals
+        position: absolute
+        top: 0
+        left: 0
+        background: red
+        height: 100vh 
+        z-index: 1
+        width: 320px
+        background: rgb(247,212 ,214)
+        padding: 38px 38px 140px
+        .modal__close
+            border: none
+            background: none
+            float: right
+        nav 
+            padding-top: 50px
+            margin-bottom: 30px
+            li
+                margin-bottom: 10px
+                a
+                    font-family: 'ProximaNovaBold'
+                    text-transform: uppercase
+                    font-size: 1em
+                    text-decoration: none
+                    color: #341812
+            ::marker
+                font-size: 0.7em
+        .contact
+            .address
+                font-family: 'ProximaNovaBold'
+                font-size: 1em
+                margin-bottom: 30px
+                &__time
+                    font-family: 'ProximaNovaRegular'
+                    font-size: 0.9em
+            .number
+                font-family: 'ProximaNovaBold'
+                font-size: 0.9em
+                &__call
+                    font-family: 'ProximaNovaRegular'
+.hide
+    display: none !important
+@media screen and ( max-width: 1200px  )
+    header
+        .header-top
+            .menu
+                nav
+                    li
+                        font-size: 13px
+            .contact
+                .address
+                    font-size: 13px
+                    &_time
+                        font-size: 13px
+                .number
+                    font-size: 13px
+        .header-main
+            &__info
+                .info-h1
+                    font-size: 36px
+                .info-h2
+                    font-size: 24px
+@media screen and ( max-width: 992px )
+    header
+        .header-top
+            .menu
+                display: none
+            .contact
+                display: none
+            .burger
+                display: block
+        .header-main
+            &__info
+                .info-h1
+                    font-size: 28px
+                .info-h2
+                    font-size: 18px
+
+@media screen and ( max-width: 768px )
+    header
+        .header-main
+            &__info
+                .info-h1
+                    font-size: 22px
+                .info-h2
+                    font-size: 14px
